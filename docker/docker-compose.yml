@@ -4,7 +4,7 @@ networks:
 services:
   philander-portfolio:
     image: philander-portfolio:V1
-    container_name: merijn-portfolio
+    container_name: philander-portfolio
     networks:
       - dockernet
     restart: unless-stopped
