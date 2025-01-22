@@ -41,6 +41,12 @@ nav {
   
   /* Responsieve weergave (voor kleinere schermen) */
   @media (max-width: 768px) {
+    #MerijnVanHien{
+      position: fixed;
+      right: 25;
+      font-size: 2.3rem;
+  }
+  
     nav ul {
       flex-direction: column; /* Zet de items onder elkaar */
       gap: 1rem;              /* Minder ruimte tussen items */
