@@ -4,7 +4,7 @@ import './navbar.css';
 const Navbar = () => {
   return (
     <nav>
-      <h1 id='MerijnVanHien' onClick={() => window.location.href = '/'}><b>Merijn van Hien</b></h1>
+      <h1 id='MerijnVanHien' onClick={() => window.location.href = '/'}><b>Philander van Hien</b></h1>
       <ul>
         <li><a href="#about">Over mij</a></li>
         <li><a href="#projects">Projecten</a></li>
