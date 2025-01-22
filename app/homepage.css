@@ -1,0 +1,93 @@
+/* Algemene stijl voor de welkomstsectie */
+.welcome-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+/* Stijl voor de inhoud (tekst en afbeelding) */
+.welcome-content {
+  display: flex; /* Zet de afbeelding en tekst naast elkaar */
+  flex-direction: column; /* Zet ze standaard onder elkaar (voor mobiel) */
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Stijl voor de profielfoto */
+.profile-photo {
+  width: 150px; /* Stel een vaste breedte in voor de afbeelding */
+  height: 150px; /* Stel een vaste hoogte in voor de afbeelding */
+  object-fit: cover; /* Zorg dat de afbeelding netjes wordt bijgesneden */
+  border-radius: 50%; /* Maak de afbeelding rond */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Titel en paragraafstijl */
+.welcome-section h1 {
+  font-size: 2.5rem;
+  color: #1abc9c;
+  margin-bottom: 1rem;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #34495e;
+  margin-bottom: 1rem;
+}
+
+/* Responsieve aanpassingen */
+@media (min-width: 768px) {
+  .welcome-content {
+    flex-direction: row; /* Zet afbeelding en tekst naast elkaar op grotere schermen */
+    text-align: left; /* Lijn de tekst links uit */
+  }
+
+  .profile-photo {
+    margin-right: 1.5rem; /* Ruimte tussen de afbeelding en de tekst */
+  }
+}
+
+
+
+/* Call-to-Action sectie */
+.cta-section {
+  text-align: center;         /* Centreer de tekst en knop */
+  padding: 2rem 1rem;         /* Ruimte binnen de sectie */
+  background-color: #1abc9c;  /* Felgroene achtergrondkleur */
+  color: #fff;                /* Witte tekstkleur */
+  border-radius: 8px;         /* Afgeronde hoeken */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
+  margin: 2rem auto;          /* Ruimte rondom de sectie */
+  max-width: 800px;           /* Beperk de breedte voor leesbaarheid */
+}
+
+/* Titel van de Call-to-Action */
+.cta-section h2 {
+  font-size: 2rem;            /* Grotere titelgrootte */
+  margin-bottom: 1.5rem;      /* Ruimte onder de titel */
+  font-weight: bold;          /* Vetgedrukte tekst */
+}
+
+/* Call-to-Action knop */
+.cta-section .cta-button {
+  display: inline-block;      /* Zorg dat de knop als een blok werkt */
+  padding: 0.8rem 1.5rem;     /* Ruimte binnen de knop */
+  background-color: #34495e;  /* Donkergrijze achtergrondkleur */
+  color: #fff;                /* Witte tekstkleur */
+  text-decoration: none;      /* Verwijder onderstreping */
+  font-size: 1rem;            /* Standaard tekstgrootte */
+  font-weight: bold;          /* Maak tekst vetgedrukt */
+  border-radius: 4px;         /* Afgeronde hoeken */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animatie */
+}
+
+/* Hover-effect voor de knop */
+.cta-section .cta-button:hover {
+  background-color: #2c3e50;  /* Donkerdere kleur bij hover */
+  transform: scale(1.05);     /* Vergroot de knop lichtjes */
+}

@@ -1,0 +1,307 @@
+#about {
+    font-family: Arial, sans-serif; /* Schone, leesbare lettertypen */
+    color: #2c3e50;                /* Donkergrijze kleur voor tekst */
+    margin: 2rem auto;
+    max-width: 800px;              /* Beperk de breedte voor betere leesbaarheid */
+    padding: 1rem;                 /* Ruimte binnen de container */
+  }
+  
+  /* Hoofdtitel */
+  #OverMij {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1abc9c;                /* Felgroene kleur */
+  }
+  
+  /* Subtitel */
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #34495e;                /* Iets donkerdere kleur */
+  }
+  
+  /* Paragraaf stijl */
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #7f8c8d;                /* Lichte grijstint */
+  }
+  
+  /* Informatiecontainer */
+  .about-info {
+    display: flex;                /* Gebruik flexbox voor titel en inhoud */
+    justify-content: space-between; /* Plaats de titel en inhoud aan weerszijden */
+    align-items: center;
+    border-bottom: 1px solid #ecf0f1; /* Subtiele scheidingslijn */
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+  }
+  
+  /* Titels in de informatie */
+  .about-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #34495e;                /* Donkere tekstkleur */
+    margin: 0;
+  }
+  
+  /* Tekst in de informatie */
+  .about-info p {
+    font-size: 1rem;
+    margin: 0;
+    color: #2c3e50;
+  }
+  
+  /* Responsive weergave */
+  @media (max-width: 600px) {
+    .about-info {
+      flex-direction: column;     /* Plaats items onder elkaar */
+      align-items: flex-start;    /* Lijn items links uit */
+    }
+  }
+  
+  
+  /* Hoofdtitel */
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1abc9c;                /* Felgroene kleur */
+  }
+  
+  /* Subtitel */
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #34495e;                /* Iets donkerdere kleur */
+  }
+  
+  /* Paragraaf stijl */
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #7f8c8d;                /* Lichte grijstint */
+  }
+  
+  /* Informatiecontainer */
+  .about-info {
+    display: flex;                /* Gebruik flexbox voor titel en inhoud */
+    justify-content: space-between; /* Plaats de titel en inhoud aan weerszijden */
+    align-items: center;
+    border-bottom: 1px solid #ecf0f1; /* Subtiele scheidingslijn */
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+  }
+  
+  /* Titels in de informatie */
+  .about-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #34495e;                /* Donkere tekstkleur */
+    margin: 0;
+  }
+  
+  /* Tekst in de informatie */
+  .about-info p {
+    font-size: 1rem;
+    margin: 0;
+    color: #2c3e50;
+  }
+  
+  /* Responsive weergave */
+  @media (max-width: 600px) {
+    .about-info {
+      flex-direction: column;     /* Plaats items onder elkaar */
+      align-items: flex-start;    /* Lijn items links uit */
+    }
+  }
+  
+/* Tijdlijn sectie */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Lijn in het midden */
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 50%; /* Plaats de lijn in het midden */
+  top: 0;
+  width: 4px; /* Breedte van de lijn */
+  height: 100%; /* Volledige hoogte */
+  background-color: #ecf0f1; /* Lichte grijze kleur */
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Tijdlijn items */
+.timeline-item {
+  position: relative;
+  width: 45%;
+  padding: 1rem;
+  background-color: #fdfefe;
+  border: 1px solid #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0; /* Ruimte tussen items */
+  z-index: 2;
+}
+
+/* Posities */
+.timeline-item.left {
+  left: 0;
+  text-align: left;
+}
+
+.timeline-item.right {
+  left: 55%; /* Plaats rechts van de lijn */
+  text-align: left;
+}
+
+/* Nummering */
+.timeline-number {
+  position: absolute;
+  top: -20px;
+  left: -30px;
+  width: 40px;
+  height: 40px;
+  background-color: #1abc9c;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+
+/* Titels */
+.timeline-item h3 {
+  color: #1abc9c;
+  margin-bottom: 0.5rem;
+}
+
+/* Details */
+.timeline-item p {
+  color: #34495e;
+  margin: 0.2rem 0;
+}
+
+/* Responsieve aanpassingen */
+@media (max-width: 600px) {
+  .timeline {
+    padding: 1rem;
+  }
+
+  .timeline:before {
+    left: 50%;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  .timeline-item.left, .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-number {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+/* Algemene stijl voor de skills sectie */
+.skill {
+  margin: 1rem 0; /* Ruimte tussen skills */
+}
+
+.skill h3 {
+  margin-bottom: 0.5rem; /* Ruimte tussen de titel en de balk */
+  font-size: 1.2rem;
+}
+
+/* Stijl voor de achtergrond van de balk */
+.skill-bar {
+  width: 100%;            /* Laat de balk de volledige breedte innemen */
+  height: 10px;           /* Hoogte van de balk */
+  background-color: #ecf0f1; /* Lichtgrijze achtergrondkleur */
+  border-radius: 5px;     /* Maak de balk afgerond */
+  overflow: hidden;       /* Zorg dat de binnenste balk niet uitsteekt */
+}
+
+/* De binnenste balk die gevuld wordt */
+.skill-bar-fill {
+  height: 100%;           /* Vul de volledige hoogte van de balk */
+  background-color: #1abc9c; /* Felgroene kleur */
+  border-radius: 5px;     /* Houd dezelfde afgeronde hoeken */
+  transition: width 0.3s ease-in-out; /* Animatie bij verandering van breedte */
+}
+
+
+/* Container styling */
+.vaardigheden-container {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+/* Titel styling */
+.vaardigheden-container h2 {
+  font-size: 2rem;
+  color: #1abc9c;
+  margin-bottom: 20px;
+}
+
+/* Buttons container */
+.vaardigheden-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Button styling */
+.vaardigheden-buttons button {
+  background-color: #1abc9c ; /* Blauwe kleur */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.vaardigheden-buttons button:hover {
+  background-color: #0056b3; /* Donkerdere blauw */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Active state */
+.vaardigheden-buttons button:active {
+  background-color: #004080; /* Nog donkerdere blauw */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(2px);
+}

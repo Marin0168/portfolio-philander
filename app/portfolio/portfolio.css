@@ -1,0 +1,140 @@
+/* Container styling */
+.project-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Project Details */
+  .project-details h1 {
+    font-size: 2.5rem;
+    color: #1abc9c;
+    margin-bottom: 20px;
+  }
+  
+  .project-details img.project-logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-details p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: justify;
+  }
+  
+  /* Skills Section */
+  .skills-section h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #1abc9c;
+  }
+  
+  .skills-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .skill {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .skill-name {
+    width: 100px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .skill-bar {
+    flex-grow: 1;
+    background: #f1f1f1;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .skill-percentage {
+    height: 100%;
+    background: #007bff;
+    border-radius: 10px 0 0 10px;
+    transition: width 0.3s ease;
+  }
+  
+  .skill-percentage-text {
+    width: 50px;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Collage Section */
+  .collage-section h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #1abc9c;
+  }
+  
+/* Project container */
+.project-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Collage Section */
+.collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.collage-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.collage-image:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox styling */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}

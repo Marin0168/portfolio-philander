@@ -1,0 +1,50 @@
+/* Footer basisstijl */
+footer {
+    width: 100%;             /* Zorg dat de footer de volledige breedte inneemt */
+    color: #268143;
+    text-align: center;       /* Centreer de inhoud */
+    font-size: 0.9rem;        /* Kleinere tekstgrootte */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtiele schaduw aan de bovenkant */
+  }
+  
+  
+  /* Copyright tekst */
+  footer p {
+    margin: 0 0 1rem 0; /* Geen marge boven, maar wel onder */
+    font-size: 1rem;    /* Iets grotere tekstgrootte */
+    font-weight: 300;   /* Lichtgewicht tekst */
+  }
+  
+  /* Lijststijl voor links */
+  footer ul {
+    list-style: none;     /* Verwijder opsommingstekens */
+    display: flex;        /* Plaats de items naast elkaar */
+    justify-content: center; /* Centreer de links */
+    gap: 1.5rem;          /* Ruimte tussen de links */
+    padding: 0;           /* Geen extra padding */
+    margin: 0;            /* Geen extra marge */
+  }
+  
+  /* Stijlen voor de links */
+  footer ul li a {
+    color: #1abc9c;        /* Felgroene kleur voor links */
+    text-decoration: none; /* Geen onderstreping */
+    font-size: 1rem;       /* Standaard tekstgrootte */
+    font-weight: 500;      /* Halfvette tekst */
+    transition: color 0.3s ease, transform 0.3s ease; /* Animaties */
+  }
+  
+  /* Hover-effect voor links */
+  footer ul li a:hover {
+    color: #f39c12;       /* Gouden kleur bij hover */
+    transform: translateY(-2px); /* Licht omhoog bewegen */
+  }
+  
+  /* Responsieve weergave */
+  @media (max-width: 768px) {
+    footer ul {
+      flex-direction: column; /* Plaats de links onder elkaar op kleine schermen */
+      gap: 1rem;              /* Minder ruimte tussen links */
+    }
+  }
+  

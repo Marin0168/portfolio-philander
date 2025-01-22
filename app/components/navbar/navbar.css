@@ -1,0 +1,49 @@
+#MerijnVanHien{
+    position: absolute;
+    font-size: 2.7rem;
+    top: 0;
+    color: black; 
+}
+
+#MerijnVanHien:hover{
+    cursor: pointer;
+}
+
+nav {
+    padding: 2rem 2rem;       /* Ruimte binnen de navigatie */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
+  }
+  
+  /* Stijlen voor de lijst */
+  nav ul {
+    list-style: none;        /* Verwijder de standaard opsommingstekens */
+    display: flex;           /* Plaats de items naast elkaar */
+    justify-content: right; /* Centreer de items */
+    gap: 2rem;               /* Ruimte tussen de links */
+    margin: 0;               /* Verwijder extra marge */
+    padding: 15;              /* Verwijder extra padding */
+  }
+  
+  /* Stijlen voor de links */
+  nav ul li a {
+    color: #268143;
+    text-decoration: none;   /* Verwijder onderstreping */
+    font-size: 1.2rem;       /* Grotere tekstgrootte */
+    font-weight: 500;        /* Halfvette tekst */
+    transition: color 0.3s, transform 0.3s; /* Animatie voor hover */
+  }
+  
+  /* Hover-effect voor de links */
+  nav ul li a:hover {
+    color: #1abc9c;          /* Felgroene kleur bij hover */
+    transform: scale(1.1);   /* Vergroot de link lichtjes */
+  }
+  
+  /* Responsieve weergave (voor kleinere schermen) */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column; /* Zet de items onder elkaar */
+      gap: 1rem;              /* Minder ruimte tussen items */
+    }
+  }
+  
