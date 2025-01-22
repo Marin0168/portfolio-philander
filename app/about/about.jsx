@@ -5,8 +5,9 @@ const AboutPage = () => {
     <div id='about'>
       <h1 id='OverMij'>Over Mij</h1>
       <div>
-        <h2>Software Developer</h2>
-        <p>Mijn naam is Merijn van Hien en zit op de opleiding Software-Developer op het Summa College in Eindhoven.</p>
+        <h2>Migration & Data Architect</h2>
+        <p>Mijn naam is Philander van Hien. De afgelopen jaren heb ik voor diverse klanten (o.a. De Lijn, AEGON, ASR, BKR, DLL, Fortis Bank Nederland, GGN, Rabobank, Robeco, Deutsche Bahn) gewerkt aan het realiseren van complexe migratie- en implementatieprojecten. Ik stuur (internationale) remote teams aan in o.a. België, Italië, India, Roemenië, het Verenigd Koninkrijk en de Verenigde Staten.
+        </p>
         <div>
           <div className='about-info'>
             <h3>Naam:</h3>

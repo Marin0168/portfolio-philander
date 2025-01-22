@@ -11,16 +11,16 @@ const Home = () => {
       {/* Hero Section */}
       <div className="welcome-section">
         <div className="welcome-content">
-          <img src="/images/Merijnvanhien.jpg" alt="Merijn van Hien" className="profile-photo" />
+          <img src="/images/philandervanhien.jpg" alt="Philander van Hien" className="profile-photo" />
           <div>
             <h1>Welkom op mijn portfolio!</h1>
             <p>
-              👋 Hallo en welkom! Mijn naam is <strong>Merijn van Hien</strong>, een gepassioneerde 
-               <strong> softwareontwikkelaar</strong> die graag ideeën tot leven brengt. Hier vind je een overzicht van mijn werk, vaardigheden en ervaringen.
+            👋 Hallo en welkom! Mijn naam is <strong>Philander van Hien</strong>. 
+            Ik ben een ervaren projectleider, business- en requirementsanalist met een specialisatie in (data)migraties, data quality en implementaties. In mijn werk combineer ik graag een scherp analytisch vermogen met pragmatisch projectmanagement.
             </p>
             <p>
-              Blader door mijn projecten, leer meer over mijn vaardigheden, en aarzel niet om contact met me op te nemen
-              als je samen wilt werken. Samen kunnen we iets bijzonders creëren! 🚀
+              Blader gerust door mijn projecten, opleidingen en vaardigheden. 
+              Wil je meer weten of samenwerken? Neem dan vooral contact op. Samen realiseren we jouw digitale transformatie! 🚀
             </p>
           </div>
         </div>
@@ -40,7 +40,7 @@ const Home = () => {
       {/* Call-to-Action */}
       <section className="cta-section">
         <h2>Benieuwd naar wat ik voor jou kan betekenen?</h2>
-        <a href="mailto:merijn@vanhien.com" className="cta-button">
+        <a href="mailto:Philander@vanhien.com" className="cta-button">
           Mail mij
         </a>
       </section>
