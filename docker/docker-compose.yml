@@ -2,8 +2,8 @@ networks:
   dockernet:
     external: true
 services:
-  merijn-portfolio:
-    image: merijn-portfolio:V1
+  philander-portfolio:
+    image: philander-portfolio:V1
     container_name: merijn-portfolio
     networks:
       - dockernet
